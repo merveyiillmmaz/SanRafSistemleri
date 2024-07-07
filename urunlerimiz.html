@@ -33,7 +33,8 @@
       .navbar-nav .nav-link:hover {
         color: #000000 !important;
       }
-      #myCarousel {
+      #myCarousel,
+      #myCarousel2 {
         width: 100%;
         max-width: 800px;
         margin: 0 auto;
@@ -64,6 +65,15 @@
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin-bottom: 40px;
+      }
+      .carousel-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .carousel-item-container {
+        flex: 1 1 calc(50% - 20px);
+        margin-bottom: 20px;
       }
     </style>
   </head>
@@ -101,45 +111,427 @@
 
     <div class="container">
       <h1>Ürünlerimiz</h1>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="product1.png" class="d-block w-100" alt="Slide 1" />
-          </div>
-          <div class="carousel-item">
-            <img src="product2.png" class="d-block w-100" alt="Slide 2" />
-          </div>
-          <div class="carousel-item">
-            <img src="product3.png" class="d-block w-100" alt="Slide 3" />
-          </div>
-          <div class="carousel-item">
-            <img src="product4.png" class="d-block w-100" alt="Slide 4" />
+      <div class="carousel-container">
+        <div class="carousel-item-container">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="market1.png" class="d-block w-100" alt="Slide 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="market2.png" class="d-block w-100" alt="Slide 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="market3.png" class="d-block w-100" alt="Slide 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="market4.png" class="d-block w-100" alt="Slide 4" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#myCarousel"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Geri</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#myCarousel"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">İleri</span>
-        </a>
+        <div class="carousel-item-container">
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel2" data-slide-to="1"></li>
+              <li data-target="#myCarousel2" data-slide-to="2"></li>
+              <li data-target="#myCarousel2" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="depo1.png" class="d-block w-100" alt="Slide 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="depo2.png" class="d-block w-100" alt="Slide 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="depo3.png" class="d-block w-100" alt="Slide 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="depo4.png" class="d-block w-100" alt="Slide 4" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel2"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel2"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item-container">
+          <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel3" data-slide-to="1"></li>
+              <li data-target="#myCarousel3" data-slide-to="2"></li>
+              <li data-target="#myCarousel3" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="celik1.png" class="d-block w-100" alt="Slide 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="celik2.png" class="d-block w-100" alt="Slide 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="celik3.png" class="d-block w-100" alt="Slide 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="celik4.png" class="d-block w-100" alt="Slide 4" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel3"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel3"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item-container">
+          <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel4" data-slide-to="1"></li>
+              <li data-target="#myCarousel4" data-slide-to="2"></li>
+              <li data-target="#myCarousel4" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="eko1.png" class="d-block w-100" alt="Slide 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="eko2.png" class="d-block w-100" alt="Slide 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="eko3.png" class="d-block w-100" alt="Slide 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="eko4.png" class="d-block w-100" alt="Slide 4" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel4"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel4"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item-container">
+          <div id="myCarousel5" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel5" data-slide-to="1"></li>
+              <li data-target="#myCarousel5" data-slide-to="2"></li>
+              <li data-target="#myCarousel5" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="product17.png" class="d-block w-100" alt="Slide 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="product18.png" class="d-block w-100" alt="Slide 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="product19.png" class="d-block w-100" alt="Slide 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="product20.png" class="d-block w-100" alt="Slide 4" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel5"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel5"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item-container">
+          <div id="myCarousel6" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel6" data-slide-to="1"></li>
+              <li data-target="#myCarousel6" data-slide-to="2"></li>
+              <li data-target="#myCarousel6" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="product21.png" class="d-block w-100" alt="Slide 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="product22.png" class="d-block w-100" alt="Slide 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="product23.png" class="d-block w-100" alt="Slide 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="product24.png" class="d-block w-100" alt="Slide 4" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel6"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel6"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item-container">
+          <div id="myCarousel7" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel7" data-slide-to="1"></li>
+              <li data-target="#myCarousel7" data-slide-to="2"></li>
+              <li data-target="#myCarousel7" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="product25.png" class="d-block w-100" alt="Slide 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="product26.png" class="d-block w-100" alt="Slide 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="product27.png" class="d-block w-100" alt="Slide 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="product28.png" class="d-block w-100" alt="Slide 4" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel7"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel7"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item-container">
+          <div id="myCarousel8" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel8" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel8" data-slide-to="1"></li>
+              <li data-target="#myCarousel8" data-slide-to="2"></li>
+              <li data-target="#myCarousel8" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="product29.png" class="d-block w-100" alt="Slide 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="product30.png" class="d-block w-100" alt="Slide 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="product31.png" class="d-block w-100" alt="Slide 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="product32.png" class="d-block w-100" alt="Slide 4" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel8"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel8"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item-container">
+          <div id="myCarousel9" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel9" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel9" data-slide-to="1"></li>
+              <li data-target="#myCarousel9" data-slide-to="2"></li>
+              <li data-target="#myCarousel9" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="product33.png" class="d-block w-100" alt="Slide 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="product34.png" class="d-block w-100" alt="Slide 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="product35.png" class="d-block w-100" alt="Slide 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="product36.png" class="d-block w-100" alt="Slide 4" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel9"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel9"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item-container">
+          <div id="myCarousel10" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel10" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel10" data-slide-to="1"></li>
+              <li data-target="#myCarousel10" data-slide-to="2"></li>
+              <li data-target="#myCarousel10" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="product37.png" class="d-block w-100" alt="Slide 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="product38.png" class="d-block w-100" alt="Slide 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="product39.png" class="d-block w-100" alt="Slide 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="product40.png" class="d-block w-100" alt="Slide 4" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel10"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel10"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
