@@ -4,78 +4,163 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anasayfa</title>
-
     <link
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link href="styles.css" rel="stylesheet" />
     <style>
+      body {
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
       .navbar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
       .navbar-brand {
         font-family: "Times New Roman", Times, serif;
         font-size: 2rem;
         font-weight: bold;
-        color: red !important;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        letter-spacing: 2px;
-        transition: color 0.3s ease, text-shadow 0.3s ease;
+        color: #004aad !important;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        letter-spacing: 1px;
       }
       .navbar-nav .nav-link {
         font-family: "Times New Roman", Times, serif;
-        color: red !important;
+        color: #004aad !important;
         font-size: 18px;
-        margin: 0 1px;
       }
-      .navbar-brand:hover {
-        color: #000000 !important;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-      }
+      .navbar-brand:hover,
       .navbar-nav .nav-link:hover {
         color: #000000 !important;
       }
-
-      .background-image {
-        background: url("arkaplanımız.png") no-repeat center center fixed;
-        background-size: cover;
-        min-height: 100vh;
+      .container1 {
+        text-align: center;
+        color: #333333;
+        margin-top: 20px;
       }
       .container1 h1 {
-        text-align: center;
-        color: #b0c4de;
-        margin-top: 40px;
         font-family: "Times New Roman", Times, serif;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #004aad;
       }
       .image-container {
         text-align: center;
-        margin: 20px 0;
+        margin: 10px 0;
       }
       .header-image {
-        width: 30vw;
-        height: 30vw;
-        border-radius: 10px;
+        width: 80%;
+        max-width: 2500px;
+        height: 635px;
+        border-radius: 5px;
         object-fit: cover;
       }
-      .container2 {
-        background: rgba(255, 255, 255, 0.8);
+      .content-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 20px auto;
+        max-width: 1200px;
+        padding: 0 20px;
+        gap: 20px;
+      }
+      .container2,
+      .featured-products {
+        background: rgba(255, 255, 255, 0.9);
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 20px auto;
-        max-width: 800px;
+        flex: 1;
       }
-      .container2 p {
-        font-family: Arial, sans-serif;
+      .container2 {
+        font-family: 'Times New Roman', Times, serif;
         font-size: 1.2rem;
+        color: #850000;
         line-height: 1.6;
-        color: #333;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      .container2 ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+      .container2 li {
+        margin-bottom: 5px;
+      }
+      .featured-products h2 {
+        text-align: center;
+        color: #004aad;
+        margin-bottom: 20px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .featured-products .product-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .featured-products .product {
+        text-align: center;
+        flex: 1 1 30%;
+      }
+      .featured-products .product img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      .featured-products .product p {
+        color: #850000;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+      }
+      .navbar-brand img.logo {
+        height: 120px;
+        width: auto;
+        transition: transform 0.3s ease;
+      }
+      .navbar-brand img.logo:hover {
+        transform: scale(1.1);
+      }
+      .map-container {
+        text-align: center;
+        margin: 20px 0;
+        padding: 0 20px;
+      }
+      .map-container iframe {
+        width: 100%;
+        max-width: 1200px;
+        height: 400px;
+        border: none;
+        border-radius: 10px;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .footer-address {
+        flex: 1;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+      }
+      .footer-logo img {
+        max-width: 150px;
+        height: auto;
       }
       .whatsapp-button {
         position: fixed;
@@ -87,59 +172,27 @@
         width: 50px;
         height: 50px;
       }
-      footer {
-        text-align: center;
-        color: #b0c4de;
-        padding: 10px;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.8);
-        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-      }
-      .map-container {
-        text-align: center;
-        margin: 20px 0;
-      }
-      .map-container iframe {
-        width: 100%;
-        height: 400px;
-        border: none;
-        border-radius: 10px;
-      }
-      .featured-products {
-        background: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 20px auto;
-        max-width: 800px;
-      }
-      .featured-products h2 {
-        text-align: center;
-        color: #333;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-      }
-      .featured-products .product-list {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-      }
-      .featured-products .product {
-        text-align: center;
-        margin: 10px;
-      }
-      .featured-products .product img {
-        width: 150px;
-        height: 150px;
-        border-radius: 10px;
-        margin-bottom: 10px;
+      @media (max-width: 768px) {
+        .content-container {
+          flex-direction: column;
+        }
+        .featured-products .product-list {
+          flex-direction: column;
+          align-items: center;
+        }
+        .featured-products .product {
+          flex: none;
+          width: 100%;
+          max-width: 300px;
+        }
       }
     </style>
   </head>
-  <body class="background-image">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">SANRAF</a>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="newlogo.png" alt="SANRAF Logo" class="logo" />
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -172,57 +225,81 @@
     <div class="container1">
       <h1>Sanraf'a Hoş Geldiniz</h1>
     </div>
-    <div class="image-container">
-      <img src="anasayfa.png" alt="Header Image" class="header-image" />
-    </div>
 
-    <div class="container2">
-      <p>
-        Sanraf olarak tüm Hatay’a hizmet vermekteyiz. Portatif raf sistemleri,
-        mağaza aksesuar ve ekipmanları, çelik raflar ürünlerimiz arasındadır.
-        Satın aldığınız ürünlerin montajı da hizmetlerimiz arasındadır.
-      </p>
-    </div>
+    <div class="content-container">
+      <div class="container2">
+        <p>
+          Sanraf olarak tüm Hatay’a hizmet vermekteyiz. Antakya, İskenderun, Reyhanlı, Altınözü, Kırıkhan, Samandağ, Arsuz ve diğer tüm ilçelere hizmetimiz mevcuttur.
+        </p>
+        <p><strong>ÜRÜNLERİMİZ:</strong></p>
+        <ul>
+          <li>Market rafları</li>
+          <li>Depo rafları</li>
+          <li>Vidalı (çelik) raflar</li>
+          <li>Duvara monte ekonomik raflar</li>
+          <li>Duvara monte ahşap raf</li>
+          <li>Giyim raf ve askılıkları</li>
+          <li>Mankenler</li>
+          <li>Giyim mağazası orta stantlar</li>
+          <li>Sepet çeşitleri</li>
+          <li>Tel stantlar</li>
+        </ul>
+        <p>
+          Ürünlerimizin görsellerine ürünlerimiz sayfasına tıklayarak ulaşabilirsiniz.
+          Dilerseniz satın aldığınız ürünlerinizin montajı da yapılmaktadır.
+          Bizi tercih ettiğiniz için teşekkür ederiz!
+        </p>
+      </div>
 
-    <div class="featured-products">
-      <h2>Öne Çıkan Ürünlerimiz</h2>
-      <div class="product-list">
-        <div class="product">
-          <img src="onecıkan1.png" alt="Product 1" />
-          <p>Market rafları</p>
-        </div>
-        <div class="product">
-          <img src="onecıkan2.png" alt="Product 2" />
-          <p>Çelik raflar</p>
-        </div>
-        <div class="product">
-          <img src="onecıkan3.png" alt="Product 3" />
-          <p>Giyim rafları</p>
+      <div class="featured-products">
+        <h2>Öne Çıkan Ürünlerimiz</h2>
+        <div class="product-list">
+          <div class="product">
+            <img src="onecıkan1.png" alt="Market Rafları" />
+            <p>Market rafları</p>
+          </div>
+          <div class="product">
+            <img src="onecıkan2.png" alt="Çelik Raflar" />
+            <p>Çelik raflar</p>
+          </div>
+          <div class="product">
+            <img src="onecıkan3.png" alt="Giyim Rafları" />
+            <p>Giyim rafları</p>
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="image-container">
+      <img src="newlogo.png" alt="Header Image" class="header-image" />
     </div>
 
     <div class="map-container">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.8640231743007!2d36.170405675634534!3d36.581494472310354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152f592b87910a1d%3A0x27e2cf5e9d2937d!2sDumlup%C4%B1nar%2C%20Ulucami%20Cd.%20No%3A128%20D%3A1%2C%2031200%20%C4%B0skenderun%2FHatay!5e0!3m2!1str!2str!4v1720287107225!5m2!1str!2str"
-        width="600"
-        height="450"
-        style="border: 0"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        >" allowfullscreen="" loading="lazy" ></iframe
-      >
+      ></iframe>
     </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-address">
+          <p>Adres: Dumlupınar Mahallesi Ulucami Caddesi No:3 İskenderun-Hatay</p>
+        </div>
+        <div class="footer-logo">
+          <img src="newlogo.png" alt="Şirket Logosu" />
+        </div>
+      </div>
+      <p>&copy; 2024 Sanraf - Tüm hakları saklıdır.</p>
+    </footer>
 
     <div class="whatsapp-button">
       <a href="https://wa.me/905363984858" target="_blank">
         <img src="wp.png" alt="WhatsApp" />
       </a>
     </div>
-    <footer>
-      <p>&copy; 2024 Sanraf - Tüm hakları saklıdır.</p>
-    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

@@ -11,33 +11,48 @@
     />
     <link href="style.css" rel="stylesheet" />
     <style>
+      body {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background-color: white; /* Navbar arka plan rengi beyaz */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
       .navbar-brand {
         font-family: "Times New Roman", Times, serif;
         font-size: 2rem;
         font-weight: bold;
-        color: red !important;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        letter-spacing: 2px;
-        transition: color 0.3s ease, text-shadow 0.3s ease;
+        color: #004aad !important;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        letter-spacing: 1px;
       }
       .navbar-nav .nav-link {
         font-family: "Times New Roman", Times, serif;
-        color: red !important;
+        color: #004aad !important;
         font-size: 18px;
-        margin: 0 1px;
       }
-
-      .navbar-brand:hover {
-        color: #000000 !important;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-      }
+      .navbar-brand:hover,
       .navbar-nav .nav-link:hover {
         color: #000000 !important;
       }
-      h1 {
+      .container1 {
         text-align: center;
-        color: red;
-        margin-top: 40px;
+        color: white;
+        margin-top: 20px;
+      }
+      .container1 h1 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #004aad;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: #004aad;
+        margin-top: 20px;
         margin-bottom: 20px;
         font-family: "Times New Roman", Times, serif;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -55,7 +70,7 @@
         margin: 10px 0;
         font-family: Arial, sans-serif;
         font-size: 1.2rem;
-        color: red;
+        color: #004aad;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
       }
       .contact-info img {
@@ -66,7 +81,6 @@
       .contact-info p {
         margin: 0;
       }
-
       .contact-form-container {
         max-width: 600px;
         margin: 50px auto;
@@ -75,55 +89,53 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
       }
-
-      .contact-form-container h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #333333;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
       .form-group {
         margin-bottom: 15px;
       }
-
       .form-control {
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
         border-radius: 4px;
       }
-
       textarea.form-control {
         resize: vertical;
       }
-
       .btn {
         display: block;
         width: 100%;
         padding: 10px;
         border: none;
-        background-color: #b0c4de;
+        background-color: #004aad;
         color: white;
         font-size: 16px;
         border-radius: 4px;
         cursor: pointer;
       }
-
       .btn:hover {
         background-color: #000000;
       }
-
       .background-image {
         background: url("koll.png") no-repeat center center fixed;
         background-size: cover;
         min-height: 100vh;
       }
+      .navbar-brand img.logo {
+        height: 100px; /* Logo yüksekliği */
+        width: auto; /* Oranları koruyarak genişlik ayarlanır */
+        transition: transform 0.3s ease;
+      }
+
+      .navbar-brand img.logo:hover {
+        transform: scale(1.1); /* Hover efektinde logo büyür */
+      }
     </style>
   </head>
   <body class="background-image">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">SANRAF</a>
+      <a class="navbar-brand" href="#">
+        <img src="newlogo.png" alt="SANRAF Logo" class="logo" />
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -154,7 +166,7 @@
     </nav>
 
     <div class="container">
-      <h1> Bizimle İletişime Geçin</h1>
+      <h1>Bizimle İletişime Geçin</h1>
       <div class="contact-info">
         <div class="info-item">
           <img src="phone.jpg" alt="Phone Icon" />
@@ -164,7 +176,6 @@
           <img src="inta.png" alt="Instagram Icon" />
           <p>@sanraf_rafsistemleri</p>
         </div>
-
         <div class="info-item">
           <img src="mail.jpg" alt="Email Icon" />
           <p>sanraf31@gmail.com</p>
@@ -201,11 +212,11 @@
             class="form-control"
             id="message"
             name="message"
-            rows="5"
+            rows="3"
             required
           ></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Gönder</button>
+        <button type="submit" class="btn">Gönder</button>
       </form>
     </div>
 
