@@ -10,30 +10,36 @@
     />
     <link href="styles.css" rel="stylesheet" />
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         background-color: white;
         margin: 0;
         padding: 0;
       }
+
       .navbar {
         background-color: #f5f5f5;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
-    
+
       .navbar-nav .nav-link {
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         color: #2c3e50 !important;
         font-size: 18px;
       }
+
       .navbar-brand:hover,
       .navbar-nav .nav-link:hover {
         color: #000000 !important;
       }
-      
+
       .image-container {
         text-align: center;
         margin: 10px 0;
       }
+
       .header-image {
         width: 80%;
         max-width: 2500px;
@@ -41,80 +47,83 @@
         border-radius: 5px;
         object-fit: cover;
       }
-     /* Content alanını ana yapıya dahil etmek için düzenledim */
-.content-container {
-  display: flex;
-  justify-content: center; /* Ortalar */
-  align-items: flex-start;
-  margin-top: 40px;
-  padding: 0 20px;
-  font-family: 'Montserrat', sans-serif;
-}
 
-.container2 {
-  background-color: #f5f5f5; /* Mat açık gri */
-  color: #2c3e50; /* Yazı rengi koyu gri */
-  max-width: 800px;
-  width: 100%;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  line-height: 1.6;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+      /* Content alanını ana yapıya dahil etmek için düzenledim */
+      .content-container {
+        display: flex;
+        justify-content: center; /* Ortalar */
+        align-items: flex-start;
+        margin-top: 40px;
+        padding: 0 20px;
+        font-family: "Montserrat", sans-serif;
+      }
 
-.container2:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
+      .container2 {
+        background-color: #f5f5f5; /* Mat açık gri */
+        color: #2c3e50; /* Yazı rengi koyu gri */
+        max-width: 800px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        line-height: 1.6;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
 
-.container2 p {
-  margin-bottom: 20px;
-  font-size: 1rem;
-}
+      .container2:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      }
 
-.container2 p strong {
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #34495e; /* Mavi vurgu */
-}
+      .container2 p {
+        margin-bottom: 20px;
+        font-size: 1rem;
+      }
 
-.container2 ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
+      .container2 p strong {
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #34495e; /* Mavi vurgu */
+      }
 
-.container2 ul li {
-  margin-bottom: 10px;
-  font-size: 1rem;
-  color: #34495e; /* Hafif koyu gri */
-}
+      .container2 ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
 
-@media (max-width: 768px) {
-  .content-container {
-    padding: 0 10px;
-  }
+      .container2 ul li {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: #34495e; /* Hafif koyu gri */
+      }
 
-  .container2 {
-    padding: 20px;
-  }
-}
+      @media (max-width: 768px) {
+        .content-container {
+          padding: 0 10px;
+        }
 
-#myCarousel,
+        .container2 {
+          padding: 20px;
+        }
+      }
+
+      #myCarousel,
       #myCarousel2 {
         background-color: #f5f5f5;
         width: 100%;
         max-width: 800px;
         margin: 0 auto;
       }
+
       h1 {
         text-align: center;
         color: #34495e;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-family: font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
       }
+
       .carousel-item img {
         width: 100%;
         height: auto;
@@ -122,102 +131,100 @@
         object-fit: contain;
       }
 
-      
-      .container {
-        padding: 40px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 40px;
-      }
       .carousel-container {
         background-color: #f5f5f5;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
       }
+
       .carousel-item-container {
         flex: 1 1 calc(50% - 20px);
         margin-bottom: 20px;
       }
-     
-       .featured-products {
-    flex: 1; /* geniş alanı kaplar */
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    color: #2c3e50;
-  }
 
-  .featured-products h2 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-align: left;
-  }
+      .featured-products {
+        flex: 1; /* geniş alanı kaplar */
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        color: #2c3e50;
+      }
 
-  .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+      .featured-products h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: left;
+      }
 
-  .product {
-    flex: 1 1 150px; /* esnek yapı */
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    padding: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
+      .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
 
-  .product:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  }
+      .product {
+        flex: 1 1 150px; /* esnek yapı */
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        padding: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
 
-  .product img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 10px;
-  }
+      .product:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
 
-  .product p {
-    margin: 0;
-    font-size: 1rem;
-    color: #34495e;
-    font-weight: 500;
-  }
+      .product img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+      }
 
-  @media (max-width: 768px) {
-    .contact-products-container {
-      flex-direction: column;
-      align-items: center;
-    }
+      .product p {
+        margin: 0;
+        font-size: 1rem;
+        color: #34495e;
+        font-weight: 500;
+      }
 
-    .featured-products {
-      width: 100%;
-    }
+      @media (max-width: 768px) {
+        .contact-products-container {
+          flex-direction: column;
+          align-items: center;
+        }
 
-    .contact-container {
-      width: 100%;
-    }
-  }
+        .featured-products {
+          width: 100%;
+        }
+
+        .contact-container {
+          width: 100%;
+        }
+      }
+
       .navbar-brand img.logo {
         height: 120px;
         width: auto;
         transition: transform 0.3s ease;
       }
+
       .navbar-brand img.logo:hover {
         transform: scale(1.1);
       }
+
       .map-container {
         text-align: center;
         margin: 20px 0;
         padding: 0 20px;
       }
+
       .map-container iframe {
         width: 100%;
         max-width: 1200px;
@@ -225,6 +232,7 @@
         border: none;
         border-radius: 10px;
       }
+
       footer {
         background-color: #f5f5f5;
         color: #34495e;
@@ -232,6 +240,7 @@
         text-align: center;
         margin-top: 20px;
       }
+
       .footer-content {
         display: flex;
         justify-content: space-between;
@@ -240,96 +249,199 @@
         margin: 0 auto;
         padding: 0 20px;
       }
+
       .footer-address {
         flex: 1;
         text-align: left;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 1rem;
       }
+
       .footer-logo img {
         max-width: 150px;
         height: auto;
       }
+
       .whatsapp-button {
         position: fixed;
         bottom: 20px;
         left: 20px;
         z-index: 100;
       }
+
       .whatsapp-button img {
         width: 50px;
         height: 50px;
       }
+
       @media (max-width: 768px) {
         .content-container {
           flex-direction: column;
         }
+
         .featured-products .product-list {
           flex-direction: column;
           align-items: center;
         }
+
         .featured-products .product {
           flex: none;
           width: 100%;
           max-width: 300px;
         }
       }
+
       .contact-container {
-    position: absolute; /* Sol tarafa sabitler */
-    top: 150px; /* Üst boşluk, ayarlayabilirsin */
-    left: 20px; /* Sol boşluk, ayarlayabilirsin */
-    width: 260px; /* Çok yer kaplamasın diye sabit genişlik */
-    background-color: #f5f5f5; /* Mat açık gri */
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    font-family: 'Montserrat', sans-serif;
-    color: #2c3e50;
-  }
+        position: absolute; /* Sol tarafa sabitler */
+        top: 150px; /* Üst boşluk, ayarlayabilirsin */
+        left: 20px; /* Sol boşluk, ayarlayabilirsin */
+        width: 260px; /* Çok yer kaplamasın diye sabit genişlik */
+        background-color: #f5f5f5; /* Mat açık gri */
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        font-family: "Montserrat", sans-serif;
+        color: #2c3e50;
+      }
 
-  .contact-container h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #2c3e50;
-    text-align: left; /* Başlık sola hizalı */
-  }
+      .contact-container h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #2c3e50;
+        text-align: left; /* Başlık sola hizalı */
+      }
 
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
 
-  .info-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+      .info-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
 
-  .info-item img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-  }
+      .info-item img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
 
-  .info-item p {
-    margin: 0;
-    font-size: 1rem;
-    color: #34495e; /* Mat koyu gri */
-  }
+      .info-item p {
+        margin: 0;
+        font-size: 1rem;
+        color: #34495e; /* Mat koyu gri */
+      }
 
-  /* Responsive için istersen şöyle ekleyebilirsin */
-  @media (max-width: 768px) {
-    .contact-container {
-      position: static;
-      width: 100%;
-      margin: 20px 0;
-    }
-  }
- /* Ana bölüm */
+      @media (max-width: 768px) {
+        .contact-container {
+          position: static;
+          width: 100%;
+          margin: 20px 0;
+        }
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+      }
 
+      .carousel-container {
+        width: 100%;
+        max-width: 1400px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f5f5f5;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+      }
+
+      .carousel-title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .carousel-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+      }
+
+      .carousel-item {
+        background: #f5f5f5;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .carousel-item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      }
+
+      .carousel-item img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+
+      .carousel-item-title {
+        font-size: 18px;
+        font-weight: 600;
+        padding: 15px;
+        color: #444;
+        text-align: center;
+        background-color: #f0f0f0;
+      }
+
+      /* Responsive */
+      @media (max-width: 1200px) {
+        .carousel-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .carousel-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .carousel-item img {
+          height: 160px;
+        }
+
+        .carousel-title {
+          font-size: 24px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .carousel-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .carousel-item img {
+          height: 150px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -351,49 +463,27 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Anasayfa</a>
+            <a class="nav-link" href="#anasayfa">Anasayfa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="hakkinda.html">Hakkında</a>
+            <a class="nav-link" href="#iletisim">İletişim</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="urunlerimiz.html">Ürünlerimiz</a>
+            <a class="nav-link" href="#urunlerimiz">Ürünlerimiz</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="iletisim.html">İletişim</a>
+            <a class="nav-link" href="#hakkinda">Hakkında</a>
           </li>
         </ul>
       </div>
     </nav>
 
-  
-    <div class="container">
-      <h1>Bizimle İletişime Geçin</h1>
-      <div class="contact-info">
-        <div class="info-item">
-          <img src="phone.jpg" alt="Phone Icon" />
-          <p>+90 536 398 48 58</p>
-        </div>
-        <div class="info-item">
-          <img src="inta.png" alt="Instagram Icon" />
-          <p>@sanraf_rafsistemleri</p>
-        </div>
-        <div class="info-item">
-          <img src="mail.jpg" alt="Email Icon" />
-          <p>sanraf31@gmail.com</p>
-        </div>
-        <div class="info-item">
-          <img src="mail.jpg" alt="Address Icon" />
-          <p>Dumlupınar Mahallesi Ulucami Caddesi No:128/1 (Eski SSK Hastanesi acil civarı) İskenderun-Hatay</p>
-        </div>
-      </div>
-    </div>
-
-
     <div class="content-container">
       <div class="container2">
         <p>
-          Sanraf olarak tüm Hatay’a hizmet vermekteyiz. Antakya, İskenderun, Reyhanlı, Altınözü, Kırıkhan, Samandağ, Arsuz ve diğer tüm ilçelere hizmetimiz mevcuttur.
+          Sanraf olarak tüm Hatay’a hizmet vermekteyiz. Antakya, İskenderun,
+          Reyhanlı, Altınözü, Kırıkhan, Samandağ, Arsuz ve diğer tüm ilçelere
+          hizmetimiz mevcuttur.
         </p>
         <p><strong>ÜRÜNLERİMİZ:</strong></p>
         <ul>
@@ -409,9 +499,9 @@
           <li>Tel stantlar</li>
         </ul>
         <p>
-          Ürünlerimizin görsellerine ürünlerimiz sayfasına tıklayarak veya aşağı kaydırarak ulaşabilirsiniz.
-          Dilerseniz satın aldığınız ürünlerinizin montajı da yapılmaktadır.
-          Bizi tercih ettiğiniz için teşekkür ederiz!
+          Ürünlerimizin görsellerine ürünlerimiz sayfasına tıklayarak veya aşağı
+          kaydırarak ulaşabilirsiniz. Dilerseniz satın aldığınız ürünlerinizin
+          montajı da yapılmaktadır. Bizi tercih ettiğiniz için teşekkür ederiz!
         </p>
       </div>
 
@@ -433,432 +523,559 @@
         </div>
       </div>
     </div>
-
-    <div class="container">
-      <h1>Ürünlerimiz</h1>
-      <div class="carousel-container">
-        <div class="carousel-item-container">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="market1.png" class="d-block w-100" alt="Slide 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="market2.png" class="d-block w-100" alt="Slide 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="market3.png" class="d-block w-100" alt="Slide 3" />
-              </div>
-              <div class="carousel-item">
-                <img src="market4.png" class="d-block w-100" alt="Slide 4" />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#myCarousel"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#myCarousel"
-              role="button"
-              data-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">İleri</span>
-            </a>
+    <section id="iletisim">
+      <div class="container">
+        <h1>Bizimle İletişime Geçin</h1>
+        <div class="contact-info">
+          <div class="info-item">
+            <img src="phone.jpg" alt="Phone Icon" />
+            <p>+90 536 398 48 58</p>
           </div>
-        </div>
-        <div class="carousel-item-container">
-          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel2" data-slide-to="1"></li>
-              <li data-target="#myCarousel2" data-slide-to="2"></li>
-              <li data-target="#myCarousel2" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="depo1.png" class="d-block w-100" alt="Slide 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="depo2.png" class="d-block w-100" alt="Slide 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="depo3.png" class="d-block w-100" alt="Slide 3" />
-              </div>
-              <div class="carousel-item">
-                <img src="depo4.png" class="d-block w-100" alt="Slide 4" />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#myCarousel2"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#myCarousel2"
-              role="button"
-              data-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">İleri</span>
-            </a>
+          <div class="info-item">
+            <img src="inta.png" alt="Instagram Icon" />
+            <p>@sanraf_rafsistemleri</p>
           </div>
-        </div>
-        <div class="carousel-item-container">
-          <div id="myCarousel3" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel3" data-slide-to="1"></li>
-              <li data-target="#myCarousel3" data-slide-to="2"></li>
-              <li data-target="#myCarousel3" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="celik1.png" class="d-block w-100" alt="Slide 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="celik2.png" class="d-block w-100" alt="Slide 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="celik3.png" class="d-block w-100" alt="Slide 3" />
-              </div>
-              <div class="carousel-item">
-                <img src="celik4.png" class="d-block w-100" alt="Slide 4" />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#myCarousel3"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#myCarousel3"
-              role="button"
-              data-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">İleri</span>
-            </a>
+          <div class="info-item">
+            <img src="mail.jpg" alt="Email Icon" />
+            <p>sanraf31@gmail.com</p>
           </div>
-        </div>
-        <div class="carousel-item-container">
-          <div id="myCarousel4" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel4" data-slide-to="1"></li>
-              <li data-target="#myCarousel4" data-slide-to="2"></li>
-              <li data-target="#myCarousel4" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="eko1.png" class="d-block w-100" alt="Slide 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="eko2.png" class="d-block w-100" alt="Slide 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="eko3.png" class="d-block w-100" alt="Slide 3" />
-              </div>
-              <div class="carousel-item">
-                <img src="eko4.png" class="d-block w-100" alt="Slide 4" />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#myCarousel4"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#myCarousel4"
-              role="button"
-              data-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">İleri</span>
-            </a>
-          </div>
-        </div>
-        <div class="carousel-item-container">
-          <div id="myCarousel5" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel5" data-slide-to="1"></li>
-              <li data-target="#myCarousel5" data-slide-to="2"></li>
-              <li data-target="#myCarousel5" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="ahsap1.png" class="d-block w-100" alt="Slide 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="ahsap2.png" class="d-block w-100" alt="Slide 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="ahsap3.png" class="d-block w-100" alt="Slide 3" />
-              </div>
-              <div class="carousel-item">
-                <img src="ahsap4.png" class="d-block w-100" alt="Slide 4" />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#myCarousel5"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#myCarousel5"
-              role="button"
-              data-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">İleri</span>
-            </a>
-          </div>
-        </div>
-        <div class="carousel-item-container">
-          <div id="myCarousel6" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel6" data-slide-to="1"></li>
-              <li data-target="#myCarousel6" data-slide-to="2"></li>
-              <li data-target="#myCarousel6" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="giyim1.png" class="d-block w-100" alt="Slide 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="giyim2.png" class="d-block w-100" alt="Slide 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="giyim3.png" class="d-block w-100" alt="Slide 3" />
-              </div>
-              <div class="carousel-item">
-                <img src="giyim4.png" class="d-block w-100" alt="Slide 4" />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#myCarousel6"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#myCarousel6"
-              role="button"
-              data-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">İleri</span>
-            </a>
-          </div>
-        </div>
-        <div class="carousel-item-container">
-          <div id="myCarousel7" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel7" data-slide-to="1"></li>
-              <li data-target="#myCarousel7" data-slide-to="2"></li>
-              <li data-target="#myCarousel7" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="manken1.png" class="d-block w-100" alt="Slide 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="manken2.png" class="d-block w-100" alt="Slide 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="manken3.png" class="d-block w-100" alt="Slide 3" />
-              </div>
-              <div class="carousel-item">
-                <img src="manken4.png" class="d-block w-100" alt="Slide 4" />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#myCarousel7"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#myCarousel7"
-              role="button"
-              data-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">İleri</span>
-            </a>
-          </div>
-        </div>
-        <div class="carousel-item-container">
-          <div id="myCarousel8" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel8" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel8" data-slide-to="1"></li>
-              <li data-target="#myCarousel8" data-slide-to="2"></li>
-              <li data-target="#myCarousel8" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="orta1.png" class="d-block w-100" alt="Slide 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="orta2.png" class="d-block w-100" alt="Slide 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="orta3.png" class="d-block w-100" alt="Slide 3" />
-              </div>
-              <div class="carousel-item">
-                <img src="orta4.png" class="d-block w-100" alt="Slide 4" />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#myCarousel8"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#myCarousel8"
-              role="button"
-              data-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">İleri</span>
-            </a>
-          </div>
-        </div>
-        <div class="carousel-item-container">
-          <div id="myCarousel9" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel9" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel9" data-slide-to="1"></li>
-              <li data-target="#myCarousel9" data-slide-to="2"></li>
-              <li data-target="#myCarousel9" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="s2.png" class="d-block w-100" alt="Slide 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="s1.png" class="d-block w-100" alt="Slide 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="s3.png" class="d-block w-100" alt="Slide 3" />
-              </div>
-              <div class="carousel-item">
-                <img src="s4.png" class="d-block w-100" alt="Slide 4" />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#myCarousel9"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#myCarousel9"
-              role="button"
-              data-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">İleri</span>
-            </a>
-          </div>
-        </div>
-        <div class="carousel-item-container">
-          <div id="myCarousel10" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel10" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel10" data-slide-to="1"></li>
-              <li data-target="#myCarousel10" data-slide-to="2"></li>
-              <li data-target="#myCarousel10" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="tel1.png" class="d-block w-100" alt="Slide 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="tel2.png" class="d-block w-100" alt="Slide 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="tel3.png" class="d-block w-100" alt="Slide 3" />
-              </div>
-              <div class="carousel-item">
-                <img src="tel4.png" class="d-block w-100" alt="Slide 4" />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#myCarousel10"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#myCarousel10"
-              role="button"
-              data-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">İleri</span>
-            </a>
+          <div class="info-item">
+            <img src="image.png" alt="Address Icon" />
+            <p>
+              Dumlupınar Mahallesi Ulucami Caddesi No:128/1 (Eski SSK Hastanesi
+              acil civarı) İskenderun-Hatay
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section id="urunlerimiz">
+      <div class="container">
+        <h1>Ürünlerimiz</h1>
+        <div class="carousel-container">
+          <div class="carousel-item-container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="market1.png" class="d-block w-100" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="market2.png" class="d-block w-100" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="market3.png" class="d-block w-100" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="market4.png" class="d-block w-100" alt="Slide 4" />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Geri</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">İleri</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item-container">
+            <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel2"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel2" data-slide-to="1"></li>
+                <li data-target="#myCarousel2" data-slide-to="2"></li>
+                <li data-target="#myCarousel2" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="depo1.png" class="d-block w-100" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="depo2.png" class="d-block w-100" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="depo3.png" class="d-block w-100" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="depo4.png" class="d-block w-100" alt="Slide 4" />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel2"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Geri</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel2"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">İleri</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item-container">
+            <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel3"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel3" data-slide-to="1"></li>
+                <li data-target="#myCarousel3" data-slide-to="2"></li>
+                <li data-target="#myCarousel3" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="celik1.png" class="d-block w-100" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="celik2.png" class="d-block w-100" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="celik3.png" class="d-block w-100" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="celik4.png" class="d-block w-100" alt="Slide 4" />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel3"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Geri</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel3"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">İleri</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item-container">
+            <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel4"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel4" data-slide-to="1"></li>
+                <li data-target="#myCarousel4" data-slide-to="2"></li>
+                <li data-target="#myCarousel4" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="eko1.png" class="d-block w-100" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="eko2.png" class="d-block w-100" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="eko3.png" class="d-block w-100" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="eko4.png" class="d-block w-100" alt="Slide 4" />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel4"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Geri</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel4"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">İleri</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item-container">
+            <div id="myCarousel5" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel5"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel5" data-slide-to="1"></li>
+                <li data-target="#myCarousel5" data-slide-to="2"></li>
+                <li data-target="#myCarousel5" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="ahsap1.png" class="d-block w-100" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="ahsap2.png" class="d-block w-100" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="ahsap3.png" class="d-block w-100" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="ahsap4.png" class="d-block w-100" alt="Slide 4" />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel5"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Geri</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel5"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">İleri</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item-container">
+            <div id="myCarousel6" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel6"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel6" data-slide-to="1"></li>
+                <li data-target="#myCarousel6" data-slide-to="2"></li>
+                <li data-target="#myCarousel6" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="giyim1.png" class="d-block w-100" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="giyim2.png" class="d-block w-100" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="giyim3.png" class="d-block w-100" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="giyim4.png" class="d-block w-100" alt="Slide 4" />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel6"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Geri</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel6"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">İleri</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item-container">
+            <div id="myCarousel7" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel7"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel7" data-slide-to="1"></li>
+                <li data-target="#myCarousel7" data-slide-to="2"></li>
+                <li data-target="#myCarousel7" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="manken1.png" class="d-block w-100" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="manken2.png" class="d-block w-100" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="manken3.png" class="d-block w-100" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="manken4.png" class="d-block w-100" alt="Slide 4" />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel7"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Geri</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel7"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">İleri</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item-container">
+            <div id="myCarousel8" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel8"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel8" data-slide-to="1"></li>
+                <li data-target="#myCarousel8" data-slide-to="2"></li>
+                <li data-target="#myCarousel8" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="orta1.png" class="d-block w-100" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="orta2.png" class="d-block w-100" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="orta3.png" class="d-block w-100" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="orta4.png" class="d-block w-100" alt="Slide 4" />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel8"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Geri</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel8"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">İleri</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item-container">
+            <div id="myCarousel9" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel9"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel9" data-slide-to="1"></li>
+                <li data-target="#myCarousel9" data-slide-to="2"></li>
+                <li data-target="#myCarousel9" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="s2.png" class="d-block w-100" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="s1.png" class="d-block w-100" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="s3.png" class="d-block w-100" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="s4.png" class="d-block w-100" alt="Slide 4" />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel9"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Geri</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel9"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">İleri</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item-container">
+            <div id="myCarousel10" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel10"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel10" data-slide-to="1"></li>
+                <li data-target="#myCarousel10" data-slide-to="2"></li>
+                <li data-target="#myCarousel10" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="tel1.png" class="d-block w-100" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="tel2.png" class="d-block w-100" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="tel3.png" class="d-block w-100" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="tel4.png" class="d-block w-100" alt="Slide 4" />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel10"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Geri</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel10"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">İleri</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="map-container">
       <iframe
@@ -868,11 +1085,36 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-
+    <section id="hakkinda">
+      <div class="container1">
+        <h1>Hakkında</h1>
+      </div>
+      <div class="content-container">
+        <div>
+          <p>Sanraf, 2014 yılında Antakya’da kurulmuş bir firmadır.</p>
+          <p>
+            Hatay genelinde mağaza aksesuarları ve raf sistemleri konusunda
+            geniş bir hizmet yelpazesi sunmaktadır.
+          </p>
+          <p>
+            Portatif raf sistemleri, çelik raflar ve mağaza ekipmanlarıyla
+            sektöründe tanınan bir isim olmanın yanı sıra, müşterilerine satın
+            aldıkları ürünlerin dilerlerse montaj hizmetini de sunmaktadır.
+          </p>
+          <p>
+            Kalite ve müşteri memnuniyeti odaklı hizmet anlayışımızla,
+            sektördeki en iyi hizmeti sunmayı amaçlıyoruz.
+          </p>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="footer-content">
         <div class="footer-address">
-          <p>Adres: Dumlupınar Mahallesi Ulucami Caddesi No:128/1 (Eski SSK Hastanesi acil civarı) İskenderun-Hatay</p>
+          <p>
+            Adres: Dumlupınar Mahallesi Ulucami Caddesi No:128/1 (Eski SSK
+            Hastanesi acil civarı) İskenderun-Hatay
+          </p>
         </div>
         <div class="footer-logo">
           <img src="f5logo.jfif" alt="Şirket Logosu" />
@@ -886,7 +1128,6 @@
         <img src="wp.png" alt="WhatsApp" />
       </a>
     </div>
-    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
