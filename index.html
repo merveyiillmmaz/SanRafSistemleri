@@ -11,7 +11,7 @@
     <link href="styles.css" rel="stylesheet" />
     <style>
       body {
-        background-color: black;
+        background-color: white;
         margin: 0;
         padding: 0;
       }
@@ -19,14 +19,7 @@
         background-color: #f5f5f5;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
-      .navbar-brand {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2rem;
-        font-weight: bold;
-        color: #004aad !important;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-        letter-spacing: 1px;
-      }
+    
       .navbar-nav .nav-link {
         font-family: 'Montserrat', sans-serif;
         color: #2c3e50 !important;
@@ -36,22 +29,7 @@
       .navbar-nav .nav-link:hover {
         color: #000000 !important;
       }
-      .container1 {
-    text-align: center;
-    margin-top: 80px;
-    padding: 20px 20px;
-    background-color: #f5f5f5; /* Mat açık gri arka plan */
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Yumuşak gölge */
-  }
-
-  .container1 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    font-weight: 600;
-    color: #2c3e50; /* Mat lacivert/gri tonunda */
-    margin-bottom: 0;
-  }
+      
       .image-container {
         text-align: center;
         margin: 10px 0;
@@ -123,6 +101,44 @@
   }
 }
 
+#myCarousel,
+      #myCarousel2 {
+        background-color: #f5f5f5;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        color: #34495e;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: font-family: 'Montserrat', sans-serif;
+      }
+      .carousel-item img {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        object-fit: contain;
+      }
+
+      
+      .container {
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+      }
+      .carousel-container {
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .carousel-item-container {
+        flex: 1 1 calc(50% - 20px);
+        margin-bottom: 20px;
+      }
      
        .featured-products {
     flex: 1; /* geniş alanı kaplar */
@@ -148,7 +164,7 @@
 
   .product {
     flex: 1 1 150px; /* esnek yapı */
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     text-align: center;
@@ -312,82 +328,6 @@
     }
   }
  /* Ana bölüm */
-.carousel-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 60px 5%;
-  background-color: #f8f8f8; /* Üst kısımla uyumlu */
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Her sütun */
-.carousel-item-container {
-  flex: 1 1 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-/* Her slider item (başlık + kutu) */
-.carousel-item-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Başlık */
-.carousel-title {
-  font-size: 20px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 12px;
-}
-
-/* Slide kutusu */
-.carousel-item-container {
-  width: 100%;
-  max-width: 400px;
-  height: 200px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.carousel-item:hover {
-  transform: scale(1.02);
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-  .carousel-container {
-    flex-direction: column;
-    padding: 40px 5%;
-  }
-
-  .carousel-container {
-    flex: 1 1 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .carousel-container {
-    font-size: 18px;
-  }
-
-  .carousel-container {
-    height: 180px;
-  }
-}
 
 
     </style>
@@ -426,9 +366,7 @@
       </div>
     </nav>
 
-    <div class="container1">
-      <h1>SANRAF RAF SİSTEMLERİ</h1>
-    </div>
+  
     <div class="container">
       <h1>Bizimle İletişime Geçin</h1>
       <div class="contact-info">
@@ -443,6 +381,10 @@
         <div class="info-item">
           <img src="mail.jpg" alt="Email Icon" />
           <p>sanraf31@gmail.com</p>
+        </div>
+        <div class="info-item">
+          <img src="mail.jpg" alt="Address Icon" />
+          <p>Dumlupınar Mahallesi Ulucami Caddesi No:128/1 (Eski SSK Hastanesi acil civarı) İskenderun-Hatay</p>
         </div>
       </div>
     </div>
@@ -467,7 +409,7 @@
           <li>Tel stantlar</li>
         </ul>
         <p>
-          Ürünlerimizin görsellerine ürünlerimiz sayfasına tıklayarak ulaşabilirsiniz.
+          Ürünlerimizin görsellerine ürünlerimiz sayfasına tıklayarak veya aşağı kaydırarak ulaşabilirsiniz.
           Dilerseniz satın aldığınız ürünlerinizin montajı da yapılmaktadır.
           Bizi tercih ettiğiniz için teşekkür ederiz!
         </p>
@@ -930,7 +872,7 @@
     <footer>
       <div class="footer-content">
         <div class="footer-address">
-          <p>Adres: Dumlupınar Mahallesi Ulucami Caddesi No:3 İskenderun-Hatay</p>
+          <p>Adres: Dumlupınar Mahallesi Ulucami Caddesi No:128/1 (Eski SSK Hastanesi acil civarı) İskenderun-Hatay</p>
         </div>
         <div class="footer-logo">
           <img src="f5logo.jfif" alt="Şirket Logosu" />
