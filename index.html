@@ -442,6 +442,20 @@
           height: 150px;
         }
       }
+      .shop-photo-container img {
+  height: 100px; /* Dükkan fotoğrafını küçült ya da büyüt */
+  width: 150px;
+  border: 2px solid #ddd; 
+  padding: 4px;
+  border-radius: 50%; /* Köşeleri yumuşatmak istersen */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Hafif gölge ekleyebilirsin */
+  margin-left: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.shop-photo-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
     </style>
   </head>
   <body>
@@ -449,6 +463,9 @@
       <a class="navbar-brand" href="#">
         <img src="f5logo.jfif" alt="SANRAF Logo" class="logo" />
       </a>
+      <div class="shop-photo-container">
+        <img src="dukkan.jfif" alt="Dükkan Fotoğrafı" class="shop-photo" />
+      </div>
       <button
         class="navbar-toggler"
         type="button"
@@ -588,6 +605,12 @@
                   <div class="carousel-item-header">Market Rafları</div>
                   <a href="market4.png" data-lightbox="carousel-gallery" data-title="Market Rafları 4">
                     <img src="market4.png" class="d-block w-100" alt="Slide 4" />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-item-header">Market Rafları</div>
+                  <a href="magaza5.jfif" data-lightbox="carousel-gallery" data-title="Market Rafları 5">
+                    <img src="magaza5.jfif" class="d-block w-100" alt="Slide 5" />
                   </a>
                 </div>
               </div>
@@ -838,6 +861,18 @@
                   <div class="carousel-item-header">Giyim Rafları</div>
                   <a href="giyim4.png" data-lightbox="giyim-gallery" data-title="Giyim Rafı 4">
                     <img src="giyim4.png" class="d-block w-100" alt="Slide 4" />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-item-header">Giyim Rafları</div>
+                  <a href="giyim5.jfif" data-lightbox="giyim-gallery" data-title="Giyim Rafı 5">
+                    <img src="giyim5.jfif" class="d-block w-100" alt="Slide 5" />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-item-header">Giyim Rafları</div>
+                  <a href="giyim6.jfif" data-lightbox="giyim-gallery" data-title="Giyim Rafı 6">
+                    <img src="giyim6.jfif" class="d-block w-100" alt="Slide 6" />
                   </a>
                 </div>
               </div>
