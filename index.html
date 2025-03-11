@@ -458,19 +458,15 @@
 }
 @media (max-width: 768px) {
   .shop-photo-container {
-    margin-left: 0; /* Sağ boşluğu sıfırla */
-    margin-top: 10px; /* Üstten biraz boşluk ekle */
-    padding: 6px;
+    margin-left: 10px; /* Logodan biraz boşluk */
+    display: flex;
+    align-items: center;
+    padding: 0;
   }
 
   .shop-photo-container img {
-    height: 80px; /* Fotoğraf boyutunu küçült */
-  }
-}
-
-@media (max-width: 480px) {
-  .shop-photo-container img {
-    height: 70px; /* Daha küçük ekranlar için */
+    height: 60px; /* Mobilde daha küçük */
+    width: auto;
   }
 }
     </style>
