@@ -442,33 +442,7 @@
           height: 150px;
         }
       }
-      .shop-photo-container img {
-  height: 100px; /* Dükkan fotoğrafını küçült ya da büyüt */
-  width: 150px;
-  border: 2px solid #ddd; 
-  padding: 4px;
-  border-radius: 50%; /* Köşeleri yumuşatmak istersen */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Hafif gölge ekleyebilirsin */
-  margin-left: 200px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.shop-photo-container img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
-}
-@media (max-width: 768px) {
-  .shop-photo-container {
-    margin-left: 10px; /* Logodan biraz boşluk */
-    display: flex;
-    align-items: center;
-    padding: 0;
-  }
-
-  .shop-photo-container img {
-    height: 60px; /* Mobilde daha küçük */
-    width: auto;
-  }
-}
+      
     </style>
   </head>
   <body>
@@ -476,9 +450,7 @@
       <a class="navbar-brand" href="#">
         <img src="f5logo.jfif" alt="SANRAF Logo" class="logo" />
       </a>
-      <div class="shop-photo-container">
-        <img src="dukkan.jfif" alt="Dükkan Fotoğrafı" class="shop-photo" />
-      </div>
+      
       <button
         class="navbar-toggler"
         type="button"
