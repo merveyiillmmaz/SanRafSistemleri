@@ -456,6 +456,23 @@
   transform: scale(1.05);
   box-shadow: 0 12px 24px rgba(0,0,0,0.3);
 }
+@media (max-width: 768px) {
+  .shop-photo-container {
+    margin-left: 0; /* Sağ boşluğu sıfırla */
+    margin-top: 10px; /* Üstten biraz boşluk ekle */
+    padding: 6px;
+  }
+
+  .shop-photo-container img {
+    height: 80px; /* Fotoğraf boyutunu küçült */
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-photo-container img {
+    height: 70px; /* Daha küçük ekranlar için */
+  }
+}
     </style>
   </head>
   <body>
